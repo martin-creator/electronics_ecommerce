@@ -1,5 +1,6 @@
 import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Product = ({ product }) => {
   return (
@@ -24,4 +25,8 @@ const Product = ({ product }) => {
   )
 }
 
+// Validate the type of props passed to the component
+Product.propTypes = {
+    product: PropTypes.object,
+}
 export default Product
