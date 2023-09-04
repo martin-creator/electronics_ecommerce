@@ -1,20 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import './scss/styles.scss'
 
 function App() {
 
- const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <button onClick={() => setCount((count) => count + 1)} >
-      click me
-      </button>
-      <button onClick={() => setCount((count) => count - 1)} >
-        Reduce me
-      </button>
-
-      <p>{count}</p>
+      <div className="container py-4 px-3 mx-auto">
+      <h1>Hello, Bootstrap and Vite!</h1>
+      <button className="btn btn-primary">Primary button</button>
+    </div>
 
       
     </>
