@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import './App.css'
+import { Container } from 'react-bootstrap'
+import Header from './components/Header'
+
 
 
 function App() {
@@ -8,10 +9,12 @@ function App() {
 
   return (
     <>
-      <div className="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button className="btn btn-primary">Primary button</button>
-    </div>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <h1>Welcome to Electro Shop</h1>
+        </Container>
+      </main>
 
       
     </>

@@ -5,9 +5,9 @@ import {FaShoppingCart, FaUser} from 'react-icons/fa'
 const Header = () => {
   return (
     <header>
-        <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+        <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
             <Container>
-                <Navbar.Brand href="/">ProShop</Navbar.Brand>
+                <Navbar.Brand href="/">Electro Shop</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                 <Nav className="ms-auto">
