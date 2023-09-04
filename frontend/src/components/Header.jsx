@@ -1,13 +1,17 @@
 import React from 'react'
 import {Navbar, Nav, Container} from 'react-bootstrap'
 import {FaShoppingCart, FaUser} from 'react-icons/fa'
+import logo from '../assets/images/logo.png'
 
 const Header = () => {
   return (
     <header>
         <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
             <Container>
-                <Navbar.Brand href="/">Electro Shop</Navbar.Brand>
+                <Navbar.Brand href="/">
+                    <img src={logo} alt="Electro Shop" width="50" height="50" />
+                    Electro Shop
+                    </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                 <Nav className="ms-auto">
