@@ -1,0 +1,24 @@
+{
+  "name": "electronics_ecommerce",
+  "version": "1.0.0",
+  "description": "Electronic Store",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/martin-creator/electronics_ecommerce.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "mern"
+  ],
+  "author": "Martin Lubowa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martin-creator/electronics_ecommerce/issues"
+  },
+  "homepage": "https://github.com/martin-creator/electronics_ecommerce#readme"
+}
