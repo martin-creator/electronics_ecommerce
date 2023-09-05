@@ -7,10 +7,6 @@
   "scripts": {
     "start": "node backend/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/martin-creator/electronics_ecommerce.git"
-  },
   "keywords": [
     "ecommerce",
     "mern"
@@ -20,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/martin-creator/electronics_ecommerce/issues"
   },
-  "homepage": "https://github.com/martin-creator/electronics_ecommerce#readme"
+  "homepage": "https://github.com/martin-creator/electronics_ecommerce#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
