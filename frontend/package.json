@@ -2,7 +2,7 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "proxy": " http://localhost:5173",
+  "proxy": " http://localhost:3000",
   "type": "module",
   "scripts": {
     "start": "vite",
