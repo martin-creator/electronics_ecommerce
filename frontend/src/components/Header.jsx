@@ -27,6 +27,13 @@ const Header = () => {
               <LinkContainer to="/cart">
                 <Nav.Link>
                   <FaShoppingCart /> Cart
+                  {
+                    cartItems.length > 0 && (
+                      <span className="badge rounded-pill bg-success">
+                        {cartItems.length}
+                      </span>
+                    )
+                  }
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/login">
