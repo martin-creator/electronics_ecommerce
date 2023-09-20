@@ -2,9 +2,12 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 import logo from "../assets/logo.png";
 
 const Header = () => {
+  const { cartItems } = useSelector((state) => state.cart);
+  console.log(cartItems);
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
