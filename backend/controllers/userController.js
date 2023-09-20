@@ -54,6 +54,15 @@ const getUsers = asyncHandler(async(req, res) => {
 }
 );
 
+// @desc    Get user by ID
+// @route   GET /api/users/:id
+// @access  Private/Admin
+
+const getUserById = asyncHandler(async(req, res) => {
+    res.send('Get User by ID Route');
+}
+);
+
 // @desc    Delete user
 // @route   DELETE /api/users/:id
 // @access  Private/Admin
