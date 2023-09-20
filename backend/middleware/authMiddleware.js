@@ -3,7 +3,7 @@ import asyncHandler from './asyncHandler';
 import User from '../Models/userModel.js'
 
 // Protect routes
-export const protect = asyncHandler(async (req, res, next) => {
+const protect = asyncHandler(async (req, res, next) => {
     let token;
 
     // Check if token is in headers
@@ -29,3 +29,18 @@ export const protect = asyncHandler(async (req, res, next) => {
         throw new Error('Not authorized, no token');
     }
 });
+
+// Admin middleware
+const admin = (req, res, next) => {
+    if(req.user && req.user.isAdmin){
+        next();
+    }else{
+        res.status(401);
+        throw new Error('Not authorized as an admin');
+    }
+}
+
+
+
+export { protect, admin };
+
