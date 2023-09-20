@@ -71,3 +71,14 @@ const deleteUser = asyncHandler(async(req, res) => {
     res.send('Delete User Route');
 }
 );
+
+// @desc    Update user
+// @route   PUT /api/users/:id
+// @access  Private/Admin
+
+const updateUser = asyncHandler(async(req, res) => {
+    res.send('Update User Route');
+}
+);
+
+export {authUser, registerUser, logoutUser, getUserProfile, updateUserProfile, getUsers, getUserById, deleteUser, updateUser};
