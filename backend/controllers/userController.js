@@ -51,7 +51,16 @@ const registerUser = asyncHandler(async(req, res) => {
 // @access  Private
 
 const logoutUser = asyncHandler(async(req, res) => {
-    res.send('Logout Route');
+    res.cookie('token', 'none', {
+        expires: new Date(Date.now(0)),
+        httpOnly: true
+    });
+
+    res.status(200).json({
+        message: 'User logged out successfully',
+        success: true,
+        data: {}
+    });
 }
 );
 
