@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {Row, Col, ListGroup, Image, Form, Button, Card} from 'react-bootstrap'
 import { FaTrash } from 'react-icons/fa'
 import Message from '../components/Message'
-import { addToCart } from '../slices/cartSlice'
+import { addToCart, removeFromCart } from '../slices/cartSlice'
 
 const CartScreen = () => {
     const navigate = useNavigate()
@@ -16,8 +16,8 @@ const CartScreen = () => {
         dispatch(addToCart({ ...item, qty }))
     }
 
-    const removeFromCartHandler = (id) => {
-        console.log(`remove: ${id}`)
+    const removeFromCartHandler =  async (id) => {
+        dispatch(removeFromCart(id));
     }
 
     const checkoutHandler = () => {
@@ -61,7 +61,7 @@ const CartScreen = () => {
                                     <Button
                                         type='button'   
                                         variant='light'
-                                        onClick={() => removeFromCartHandler(item.product)}
+                                        onClick={() => removeFromCartHandler(item._id)}
                                     >
                                         <FaTrash/>
                                     </Button>
