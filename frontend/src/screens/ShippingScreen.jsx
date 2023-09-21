@@ -71,7 +71,6 @@ const ShippingScreen = () => {
                 type="submit"
                 variant="primary"
                 className="mt-2"
-                disabled={isLoading}
             >
                 Continue
             </Button>
