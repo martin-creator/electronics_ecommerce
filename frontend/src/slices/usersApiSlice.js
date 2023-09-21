@@ -13,3 +13,5 @@ export const usersApiSlice = apiSlice.injectEndpoints({
     }),
 }),
 });
+
+export const { useLoginMutation } = usersApiSlice;
